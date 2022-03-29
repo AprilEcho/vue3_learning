@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计数器案例</title>
+</head>
+<body>
+  <h2 class="count">0</h2>
+  <button class="increment">+1</button>
+  <button class="decrement">-1</button>
+  <script>
+    const countEl = document.querySelector('.count');
+    const incrementEl = document.querySelector('.increment');
+    const decrementEL = document.querySelector('.decrement')
+
+    //点击事件
+    count = 0
+    incrementEl.addEventListener('click',()=>{
+        count+=1
+        countEl.innerHTML = count
+    })
+    decrementEL.addEventListener('click',()=>{
+        count-=1
+        countEl.innerHTML = count
+    })
+  </script>
+</body>
+</html>
